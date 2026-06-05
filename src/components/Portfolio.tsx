@@ -2,9 +2,10 @@
 
 export default function Portfolio() {
   const projects = [
-    { t: "Project Alpha", c: "Design", e: "🖌️", bg: "#1a202c", link: "#", tag: "Featured" },
-    { t: "Project Beta", c: "Development", e: "💻", bg: "#2d3748", link: "#", tag: "New" },
-    { t: "Project Gamma", c: "Branding", e: "🎨", bg: "#4a5568", link: "#", tag: "Popular" }
+    { t: "Fintech Dashboard", c: "Design & Development", e: "💳", bg: "linear-gradient(135deg,#0f2027,#203a43,#2c5364)", link: "#", tag: "Featured" },
+    { t: "EcoShop Platform", c: "UI/UX & Branding", e: "🌿", bg: "linear-gradient(135deg,#134e5e,#71b280)", link: "#", tag: "New" },
+    { t: "Pulse Media App", c: "Mobile & Web", e: "🎙️", bg: "linear-gradient(135deg,#200122,#6f0000)", link: "#", tag: "Popular" },
+    { t: "Nova SaaS Landing", c: "Development & SEO", e: "🚀", bg: "linear-gradient(135deg,#0f0c29,#302b63,#24243e)", link: "#", tag: "Recent" },
   ];
 
   return (
@@ -17,11 +18,7 @@ export default function Portfolio() {
         </div>
         <div className="port-grid reveal" id="port-grid">
           {projects.map((p, i) => (
-            <div 
-              key={i} 
-              className="port-card" 
-              onClick={() => window.location.href = p.link}
-            >
+            <div key={i} className="port-card" onClick={() => window.location.href = p.link}>
               <div className="port-thumb" style={{ background: p.bg }}>
                 <span>{p.e}</span>
               </div>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scornith Digital Agency | Premium Design & Development</title>
+<meta name="description" content="Premium UI/UX Design and Web Development Agency — Scornith Digital Agency">
+<meta property="og:title" content="Scornith Digital Agency">
+<meta property="og:description" content="Premium UI/UX Design and Web Development Agency">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="progress"></div>
+
+<!-- ══ PRELOADER ══ -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-tagline">Digital Agency</div>
+    <div class="loader-words">
+      <div class="loader-word">Scornith</div>
+      <div class="loader-word">Studio.</div>
+    </div>
+    <div class="loader-progress-wrap">
+      <div class="loader-line"></div>
+      <div class="loader-pct" id="pct">0%</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ══ -->
+<nav>
+  <div class="logo">Scornith</div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button id="theme-toggle">☀️ Light</button>
+    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start a Project</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="fc fc-left">
+    <div class="fc-lbl">Lighthouse Score</div>
+    <div class="fc-val">⚡ 98 / 100</div>
+    <div class="fc-sub">Performance ↑ 12%</div>
+  </div>
+  <div class="fc fc-right">
+    <div class="fc-lbl">Latest Delivery</div>
+    <div class="fc-val">✦ Fintech Dashboard</div>
+    <div class="fc-sub">Shipped 2 days ago</div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="pulse-dot"></span> Available for new projects</div>
+    <h1 class="hero-title">
+      We Design Digital<br>
+      <span class="gradient-text">Experiences That Convert</span>
+    </h1>
+    <p class="hero-sub">Helping startups and businesses build beautiful, high-performing digital products that users love and investors notice.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start a Project →</button>
+      <button class="btn-secondary" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View Portfolio</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num" id="s1">0+</div><div class="stat-label">Projects Completed</div></div>
+      <div class="stat"><div class="stat-num" id="s2">0+</div><div class="stat-label">Happy Clients</div></div>
+      <div class="stat"><div class="stat-num" id="s3">0+</div><div class="stat-label">Years Experience</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">What we do</div>
+      <h2 class="section-title">Services Built for <span class="gradient-text">Growth</span></h2>
+      <p class="section-sub">End-to-end digital solutions — from pixel-perfect design to scalable engineering that performs.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc-card">
+        <div class="svc-icon">🎨</div>
+        <div class="svc-title">UI/UX Design</div>
+        <p class="svc-desc">Intuitive user experiences built on real research, modern design systems, and delightful micro-interactions.</p>
+        <div class="svc-arrow">→</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">⚡</div>
+        <div class="svc-title">Web Development</div>
+        <p class="svc-desc">Fast, scalable websites built with Next.js 15, TypeScript, and performance-first architecture.</p>
+        <div class="svc-arrow">→</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">✦</div>
+        <div class="svc-title">Branding</div>
+        <p class="svc-desc">Memorable brand identities — logos, design systems, and visual language that stand out and endure.</p>
+        <div class="svc-arrow">→</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon">📈</div>
+        <div class="svc-title">SEO Optimization</div>
+        <p class="svc-desc">Technical SEO, Core Web Vitals tuning, and content strategy that drives measurable organic growth.</p>
+        <div class="svc-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PORTFOLIO ══ -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Our work</div>
+      <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+      <p class="section-sub">A curated look at products we've designed and shipped across industries and scales.</p>
+    </div>
+    <div class="port-grid reveal" id="port-grid"></div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="reveal">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Let's Build<br><span class="gradient-text">Something Great</span></h2>
+        <p style="color:var(--muted);line-height:1.9;margin-bottom:2rem;font-size:.95rem;font-weight:300">Have a project in mind? Drop us a message — we respond within 24 hours.</p>
+        <div class="contact-detail"><div class="cd-icon">📍</div> Chennai, Tamil Nadu, India</div>
+        <div class="contact-detail"><div class="cd-icon">✉️</div> hello@scornith.com</div>
+        <div class="contact-detail"><div class="cd-icon">📞</div> +91 98765 43210</div>
+        <div style="display:flex;gap:.75rem;margin-top:2rem">
+          <a href="https://twitter.com/scornith" class="social-link" target="_blank" rel="noopener">𝕏</a>
+          <a href="https://linkedin.com/company/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.72rem;font-weight:600">in</a>
+          <a href="https://github.com/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.68rem;font-weight:600">GH</a>
+          <a href="https://dribbble.com/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.68rem;font-weight:600">Dr</a>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <form id="cform" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New project enquiry — Scornith">
+          <input type="text" name="_gotcha" style="display:none">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" id="f-name" placeholder="Aryan Sharma" autocomplete="name">
+              <div class="err-msg" id="e-name">Name is required</div>
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" id="f-email" placeholder="aryan@company.com" autocomplete="email">
+              <div class="err-msg" id="e-email">Valid email required</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Company / Project</label>
+            <input type="text" name="company" id="f-company" placeholder="Acme Inc. (optional)">
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea name="message" id="f-msg" placeholder="Tell us about your project — scope, goals, and timeline..."></textarea>
+            <div class="err-msg" id="e-msg">Message is required</div>
+          </div>
+          <p class="form-note">By submitting you agree to our <a href="/privacy">Privacy Policy</a>. We never spam.</p>
+          <button type="submit" class="btn-submit" id="f-submit">Let's Talk →</button>
+        </form>
+        <div class="success-state" id="success-state">
+          <div class="success-icon">✅</div>
+          <h3>Message Received!</h3>
+          <p>Thanks for reaching out to Scornith. We'll get back to you within 24 hours at the email you provided.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="logo">Scornith</span>
+      <p>A premium digital agency crafting exceptional web experiences for startups and growing businesses worldwide.</p>
+      <div class="footer-social">
+        <a href="https://twitter.com/scornith" class="social-link" target="_blank" rel="noopener">𝕏</a>
+        <a href="https://linkedin.com/company/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.72rem;font-weight:600">in</a>
+        <a href="https://github.com/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.68rem;font-weight:600">GH</a>
+        <a href="https://dribbble.com/scornith" class="social-link" target="_blank" rel="noopener" style="font-size:.68rem;font-weight:600">Dr</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Services</div>
+      <ul class="footer-links">
+        <li><a href="/services/ui-ux-design">UI/UX Design</a></li>
+        <li><a href="/services/web-development">Web Development</a></li>
+        <li><a href="/services/branding">Branding</a></li>
+        <li><a href="/services/seo">SEO Optimization</a></li>
+        <li><a href="/services/mobile">Mobile Apps</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <div class="footer-col-title">Stay Updated</div>
+      <p>Design tips, case studies, and insights — no spam, unsubscribe anytime.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com" id="nl-email">
+        <button type="button" onclick="handleNewsletter()">Subscribe →</button>
+      </div>
+      <p style="font-family:var(--mono);font-size:.65rem;color:var(--muted);margin-top:.6rem;letter-spacing:.04em" id="nl-msg"></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Scornith Digital Agency. All rights reserved.</div>
+    <div class="footer-legal">
+      <script src="main.js" defer></script>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+      <a href="/cookies">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+</body>
+</html>
